@@ -5,7 +5,7 @@
 Welcome to my DevOps Quest! This repository is a place where I document my path to mastering DevOps, taking part in the DevOps Kitchen Workshop—a community dedicated to hands-on learning and real-world experience. Each week, I dive into tools, labs, and projects, all aimed at expanding my DevOps expertise.
 
 ## 🎯 About DevOps Kitchen Workshop
-The DevOps Kitchen Workshop is a collaborative, open-source community where members craft and complete workshops on various DevOps tools. It's a great place to learn, share knowledge, and grow together in a supportive environment.
+The *DevOps Kitchen Workshop* is a collaborative, open-source community where members craft and complete workshops on various DevOps tools. It's a great place to learn, share knowledge, and grow together in a supportive environment.
 
 ## My Goals
 As I embark on this journey, I’m aiming to:
