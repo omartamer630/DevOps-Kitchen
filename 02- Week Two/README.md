@@ -34,3 +34,6 @@ your knowledge later
  ![Life Cycle 7days expires](lifecycle.png)
  5. Configured Encrypted S3 with SSE-S3 Algorithem and enbaled Bucket Key
  ![Configured Encrypted and Bucket Key](configuredencrypted.png)
+
+## Diagram
+ ![Week Two Diagram](Weektwo.gif.gif)
