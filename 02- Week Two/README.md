@@ -23,3 +23,10 @@ Bouns
 2. Build a personal document consisting of what you learn with deep details and resources i.e. this will assist you to get back and refresh
 your knowledge later
 ```
+
+## Steps
+ 1. Intilized S3 Bucket Named forgtech-bucket
+ 2. Enabled Versioning only and other like (Block access, disable object, bucket owner) used there default value
+ 3. Added Lifecycle rule 7 days for logs to expire
+ 4. Encrypted S3 with SSE-S3 Algorithem and enbaled Bucket Key
+ 5. Created *backend.tf* file for  storing terraform state file in bucket named *forgtech-terraform-statefile*

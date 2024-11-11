@@ -16,7 +16,7 @@ resource "aws_s3_bucket_versioning" "forgtech-bucket-enable-versioning" {
 resource "aws_s3_bucket_lifecycle_configuration" "forgtech-s3-lifecycle-config" {
   bucket = aws_s3_bucket.forgtech-bucket.id
   rule {
-    id = "log-rule"
+    id = "expire-rule"
     status = "Enabled"
     expiration {
       days = 7
