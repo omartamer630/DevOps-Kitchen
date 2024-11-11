@@ -25,7 +25,7 @@ your knowledge later
 ```
 
 ## Steps
- 1. Intilized S3 Bucket Named *forgtech-bucket*
+ 1. Initialized S3 Bucket Named *forgtech-bucket*
  2. Created *backend.tf* file for  storing terraform state file in bucket named *forgtech-terraform-statefile*
  ![Bucket Image](bucketimage.png)
  3. Enabled Versioning only for version control, And other options like (Block access, disable object, bucket owner) used there default value
