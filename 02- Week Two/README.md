@@ -25,8 +25,12 @@ your knowledge later
 ```
 
 ## Steps
- 1. Intilized S3 Bucket Named forgtech-bucket
- 2. Enabled Versioning only and other like (Block access, disable object, bucket owner) used there default value
- 3. Added Lifecycle rule 7 days for logs to expire
- 4. Encrypted S3 with SSE-S3 Algorithem and enbaled Bucket Key
- 5. Created *backend.tf* file for  storing terraform state file in bucket named *forgtech-terraform-statefile*
+ 1. Intilized S3 Bucket Named *forgtech-bucket*
+ 2. Created *backend.tf* file for  storing terraform state file in bucket named *forgtech-terraform-statefile*
+ ![Bucket Image](bucketimage.png)
+ 3. Enabled Versioning only for version control, And other options like (Block access, disable object, bucket owner) used there default value
+ ![Versioning Enabled](versioningenabled.png)
+ 4. Configured Lifecycle rule 7 days for logs to expire
+ ![Life Cycle 7days expires](lifecycle.png)
+ 5. Configured Encrypted S3 with SSE-S3 Algorithem and enbaled Bucket Key
+ ![Configured Encrypted and Bucket Key](configuredencrypted.png)
