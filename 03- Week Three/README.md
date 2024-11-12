@@ -33,4 +33,4 @@ your knowledge later
 ## Steps
 1. Created S3 Bucket with default values of (bucket owner owns all the objects,Block public access,Object lock), enabled versioning only for version control, and encrypted S3 object to *SSE-S3* and enabled Bucket Key
 2. Created to IAM users (Taha, and Mostafa) with get object or upload object policy with access key so we can test it in AWS CLI
-![IAM Test](image.png)
+![IAM Test](IAMTest.png)
