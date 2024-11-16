@@ -41,3 +41,7 @@ your knowledge later
 ![VPC Endpoint](images/image-4.png)
 ![S3 Access](images/image.png)
 ![file Uploaded](images/image-3.png)
+
+# Diagram
+
+![Weekfour Diagram](images/Weekfour.gif)
