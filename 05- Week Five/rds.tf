@@ -18,3 +18,16 @@ resource "aws_db_instance" "forgtech-rds-postgresql" {
     Owner = var.environment[1]
   }
 }
+
+resource "aws_db_subnet_group" "db-attached-subnet" {
+  name = "forgtech-db-subnet-group"
+  subnet_ids = [
+    "${aws_subnet.forgtech-subnet.id}",
+    "${aws_subnet.forgtech-subnetb.id}"
+    ]
+  tags = {
+    Name = "rds-subnet-group"
+    Environment = var.environment[0]
+    Owner = var.environment[1]
+  }
+}
