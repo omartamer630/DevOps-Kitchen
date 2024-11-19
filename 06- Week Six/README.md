@@ -43,8 +43,7 @@ your knowledge later
 3. Created Three Subnet, *forgtech-private-subnet-a* for Primary RDS instance, *forgtech-private-subnet-b* for standby that is synchronized, *forgtech-public-subnet-a* for bastion server
 4. Created BastionHost (EC2), enabled auto assigned IP and attach ec2 to public subnet
 5. Created two Security group, one that allow SSH (22) port in inbound and allow all traffic outbound, and one that allows traffic from Bastionhost Security Group allows all outbound traffic
-6. Created RDS  that allow allocated 20Gbs, skip final snapshot, and multi az
-7. Finally Created Key Pair and Upload it to S3 bucket
+6. Finally Created RDS  that allow allocated 20Gbs, skip final snapshot, and multi az
 
 # Proof
 
@@ -56,8 +55,6 @@ your knowledge later
 ![rds](images/rds.png)
 
 ![Bastion Host](images/bastionhost.png)
-
-![S3 key pair](images/s3.png)
 
 ![postgres pgadmin](images/postgress.png)
 
