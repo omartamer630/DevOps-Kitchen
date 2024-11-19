@@ -9,7 +9,7 @@ resource "aws_db_instance" "forgtech-rds-postgresql" {
   db_subnet_group_name = aws_db_subnet_group.db-attached-subnet.id
   vpc_security_group_ids = [ aws_security_group.forgtech-rds-sg.id ]
   username = var.forgtech-senstive-data[0].username
-  password = var.forgtech-senstive-data[0].password
+  manage_master_user_password = true
   tags = {
     Name = "forgtech-rds-posgress"
     Environment = var.environment[0]
