@@ -41,4 +41,11 @@ your knowledge later
 
 # Proof
 
+```bash VPC```
+![VPC](images/vpc.png)
 
+![sg](images/sg.png)
+
+![rds](images/rds.png)
+
+![postgres pgadmin](images/pgadmin.png)
