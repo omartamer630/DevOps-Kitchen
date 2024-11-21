@@ -9,25 +9,6 @@ resource "aws_vpc" "forgtech-vpc" {
   }
 }
 
-resource "aws_route_table" "forgtech-private-route-table" {
-  vpc_id = aws_vpc.forgtech-vpc.id
-  tags = {
-    Name = "forgtech-private-rtb"
-    Environment = var.environment[0]
-    Owner = var.environment[1]
-  }
-}
-
-resource "aws_route_table_association" "forgtech-private-subnet-a-association" {
-  subnet_id      = aws_subnet.forgtech-private-subnet-a.id
-  route_table_id = aws_route_table.forgtech-private-route-table.id
-}
-
-resource "aws_route_table_association" "forgtech-private-subnet-b-association" {
-  subnet_id      = aws_subnet.forgtech-private-subnet-b.id
-  route_table_id = aws_route_table.forgtech-private-route-table.id
-}
-
 resource "aws_route_table" "forgtech-public-route-table" {
   vpc_id = aws_vpc.forgtech-vpc.id
   tags = {
