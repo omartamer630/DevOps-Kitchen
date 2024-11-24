@@ -1,6 +1,3 @@
-provider "aws" {
-  region = var.AWS_DEFAULT_REGION
-}
 terraform {
   required_providers {
     aws = {
@@ -15,4 +12,8 @@ terraform {
       name = "DevOps-workshop"
     }
   }
+}
+
+provider "aws" {
+  region = var.AWS_DEFAULT_REGION
 }

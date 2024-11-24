@@ -30,7 +30,5 @@ variable "forgtech-senstive-data" {
   description = "Forgtech Senstive Data Vars"
   type = list(object({
     username = string
-    password = string
   }))
-  sensitive = true
 }
