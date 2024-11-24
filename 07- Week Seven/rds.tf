@@ -7,7 +7,7 @@ resource "aws_db_instance" "forgtech-rds-postgresql" {
   instance_class              = "db.t3.micro"
   apply_immediately           = true
   publicly_accessible         = false # default is false
-  multi_az                    =  true # using stand alone DB
+  multi_az                    = true # using stand alone DB
   skip_final_snapshot         = true # after deleting RDS aws will not create snapshot 
   copy_tags_to_snapshot       = true # default = false
   db_subnet_group_name        = aws_db_subnet_group.db-attached-subnet.id
