@@ -28,9 +28,13 @@ data "aws_iam_policy_document" "lambda-policy-to-access-s3" {
   statement {
     actions = [
       "s3:GetObject",
-      "s3:PutObject"
+      "s3:PutObject",
+      "s3:DeleteObject"
     ]
-    resources = ["${aws_s3_bucket.forgtech-external-bucket.arn}/*", "${aws_s3_bucket.forgtech-internal-bucket.arn}/*"]
+    resources = [ 
+      "${aws_s3_bucket.forgtech-external-bucket.arn}/*", 
+      "${aws_s3_bucket.forgtech-internal-bucket.arn}/*"
+      ]
     effect = "Allow"
   }
 }
