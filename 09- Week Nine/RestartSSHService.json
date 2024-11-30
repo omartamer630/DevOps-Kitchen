@@ -1,0 +1,15 @@
+{
+    "schemaVersion": "2.2",
+    "description": "SSM Document to restart SSH service",
+    "mainSteps": [
+        {
+            "action": "aws:runShellScript",
+            "name": "restartSSH",
+            "inputs": {
+                "runCommand": [
+                    "sudo systemctl restart sshd"
+                ]
+            }
+        }
+    ]
+}
