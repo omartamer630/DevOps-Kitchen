@@ -18,9 +18,9 @@ variable "AWS_DEFAULT_REGION" {
 variable "environment" {
   description = "Most Used Variables in All services"
   default = {
-  Environment = "terraformChamp"
-  Owner = "Omar"
-  Name = "forgtech"
+    Environment = "terraformChamp"
+    Owner       = "Omar"
+    Name        = "forgtech"
   }
 }
 
