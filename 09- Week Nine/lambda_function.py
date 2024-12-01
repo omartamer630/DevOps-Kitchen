@@ -7,7 +7,7 @@ def lambda_handler(event, context):
     # ssm_document_name = os.environ['SSM_DOCUMENT_NAME']
 
     # Hardcode the document name for simplicity
-    ssm_document_name = 'SSM_DOCUMENT_NAME'
+    ssm_document_name = "ssm_document_shell_configs"
     ec2_instance_id = os.environ['EC2_INSTANCE_ID']  # hold the instance ID from environment variable
 
     # Create an SSM client
