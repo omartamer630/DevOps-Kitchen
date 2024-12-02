@@ -70,8 +70,13 @@ resource "aws_iam_role" "lambda-role" {
   tags               = var.environment
 }
 
-resource "aws_iam_role_policy_attachment" "lambda-ec2-policy-attachment" {
+resource "aws_iam_role_policy_attachment" "lambda-efs-policy-attachment" {
   policy_arn = "arn:aws:iam::aws:policy/AmazonElasticFileSystemFullAccess"
+  role       = aws_iam_role.lambda-role.name
+}
+
+resource "aws_iam_role_policy_attachment" "lambda-ec2-policy-attachment" {
+  policy_arn = "arn:aws:iam::aws:policy/AmazonEC2FullAccess"
   role       = aws_iam_role.lambda-role.name
 }
 # ============================== @Lambda Role End@ ==========================

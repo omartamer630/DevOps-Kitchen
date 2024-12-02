@@ -9,6 +9,9 @@ resource "aws_instance" "forgtech-ec2" {
   tags                        = var.environment
   user_data                   = <<-EOF
               #!/bin/bash
-              sudo apt install update -y && sudo apt install curl -y
+              sudo apt-get update && sudo apt-get install -y nfs-common
+              sudo mkdir /mnt/efs
+              sudo mount -t nfs4 -o nfsvers=4.1 ${aws_efs_file_system.forgtech_efs_storage_ec2.id}:/ /mnt/efs
     EOF
+  depends_on = [ aws_efs_access_point.access_point_for_lambda ]
 }
