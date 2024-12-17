@@ -5,14 +5,15 @@ terraform {
       version = "~> 5.0"
     }
   }
-
-  cloud {
-    organization = "DevOps-Kitchen"
-    workspaces {
-      name = "DevOps-workshop"
-    }
-  }
+  
+  backend "s3" {
+     bucket = "forgtech-terraform-statefile"
+     key    = "terraform.tfstate"
+     region = "us-east-1"
 }
+}
+
+
 
 provider "aws" {
   region = var.AWS_DEFAULT_REGION
