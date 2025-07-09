@@ -21,12 +21,17 @@ def all_instances():
         instances.append(ec2)
   return instances
 
+
+def fetch_into_file(text_name , fetch_resource):
+  with open(text_name, 'a') as file_object:
+    file_object.write(str(fetch_resource))
+
+
+
 vpc_content_file = 'vpc_details.txt'
 ec2_content_file = 'ec2_details.txt'
 
-with open(vpc_content_file, 'a') as file_object :
-  file_object.write(str(all_vpcs()))
 
+fetch_into_file(vpc_content_file, all_vpcs())
 
-with open(ec2_content_file, 'a') as file_object:
-  file_object.write(str(all_instances()))
+fetch_into_file(ec2_content_file,all_instances())
