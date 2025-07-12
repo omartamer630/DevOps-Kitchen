@@ -30,7 +30,7 @@ def all_instances():
     return instances
 
 
-def fetch_into_file(text_name = '', fetch_resource = ''):
+def fetch_into_file(text_name='', fetch_resource=''):
     """
     First Parameter (text_name) = file name
     Second Parameter (fetch_resource) = file that i will put the fetched data in it
