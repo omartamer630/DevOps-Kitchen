@@ -36,8 +36,8 @@ def does_object_exist(service_call: object, bucket: str, file_name: str):
             Bucket=bucket.name,
             Key=file_name,
             WaiterConfig={
-                'Delay': 5,
-                'MaxAttempts': 3
+                'Delay': 10,
+                'MaxAttempts': 10
             }
         )
         print("Object exists.")
