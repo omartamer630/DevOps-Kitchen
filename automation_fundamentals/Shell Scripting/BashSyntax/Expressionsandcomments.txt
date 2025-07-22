@@ -1,0 +1,25 @@
+#! /usr/bin/bash
+
+#Expressions 
+
+# x=8
+# y=2
+# z= expr 1 + 2
+# let sum=3+10
+
+# echo ${sum}
+# echo $((++x))
+
+#comment
+<<Comment
+echo "Comment"
+Comment
+#echo $$ # generate PID 
+#echo $0 # get current location $1-$9 stores the arguments name
+#echo $# # count arguments number
+#echo $* # stores all the command line arguments
+#echo $? # check if there's an error message get 127 if correct get 0
+#echo $@ #  Send all the arguments
+# args=("$@")
+# echo ${args[1]} ${args[0]} 
+

@@ -1,0 +1,38 @@
+#! /usr/bin/bash
+
+#string 
+
+# str1="welcome.to.javapoint"
+# str2="java.point"
+
+# if [ $str1 \< $str2 ]
+# then 
+#   echo "$str1 is less than $str2"
+# else
+#   echo "$str1 is not less than $str2"
+# fi
+
+# if [ -n $str1 ] 
+# then 
+#   echo "$str1 is  empty"
+# else
+#   echo "$str1 is not empty"
+# fi
+
+# length=${#str1} # start from 0 
+
+# echo "Length of '${str1}' is ${length}"
+
+# length=`echo $str1 | wc -c` # wc start from 1 not 0
+
+# echo "Length of '${str1}' is ${length}"
+
+#IFS='.' #setting space as delimiter y3ni by2sm el string bta3i
+#read -ra ADDR <<< "${str1}"  # -ra da array  w ADDR da esn el variable w <<< de append el string bta3i 
+# echo ${ADDR[2]}
+
+#all elements of array ${ADDR[@]}
+# for i in "${ADDR[@]}"; # ACCESSING each element of array
+# do
+# echo "${i}"
+# done

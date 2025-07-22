@@ -1,0 +1,14 @@
+#! /usr/bin/bash
+
+#ARRAY
+
+# declare -a array=("a" "b" "c")
+# array2=("a""b" "c")
+
+# #unset use to delete the array
+# echo ${array[@]} 
+# echo ${array[@]:1:2} 
+
+# unset array
+
+# echo ${array[@]} 

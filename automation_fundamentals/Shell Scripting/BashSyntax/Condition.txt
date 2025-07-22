@@ -1,0 +1,60 @@
+#! /usr/bin/bash
+
+# if condition in bash 
+
+# read -p "Name : " var
+
+# if [ -n ${var} ]
+# then
+# echo "the value is 1"
+# else
+# echo "the value is not 1"
+# fi
+
+# if [ 1 -eq 1 && 5 -gt 4 ]
+# then
+# echo "Condition is true"
+# fi
+
+# if [ 1 -eq 1 ] && [ 5 -gt 4 ]
+# then
+# echo "Condition is true"
+# fi
+
+# if [[ 1 -eq 1 && 5 -gt 4 ]]
+# then
+# echo "Condition is true"
+# fi
+
+# #C Style
+# if ((1 == 1 && 5 == 4))
+# then
+# echo "Condition is true"
+# fi
+
+# # test condition
+
+# test "omar" = "omar" && echo true || echo false
+
+# 001 is string because of (=) you should (-eq) for integer  
+
+# test 013 -le 12 && echo true || echo false
+
+#Switch
+# echo "Do you know me?"
+# read -p "Answer is " Answer
+
+# case $Answer in
+
+# YES|Yes|yes)
+# echo hello world
+# ;;
+
+# NO|No|no)
+# echo bye bye
+# ;;
+
+# *)
+# echo default
+# ;;
+# esac

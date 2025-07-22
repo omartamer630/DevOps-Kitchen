@@ -1,0 +1,30 @@
+#! /usr/bin/bash
+
+#Function
+
+# function test3(){
+
+#   echo "Welcome"
+
+# }
+# test3
+
+# function displayHelloArguments(){
+
+#   echo $1 $2 $3 $4
+# }
+
+# displayHelloArguments Hello world im here
+
+
+# function add(){
+
+# sum=$(($1 + $2))
+# return $sum
+# }
+
+# a=10
+# b=20
+# add $a $b
+# result=$?
+# echo ${result}

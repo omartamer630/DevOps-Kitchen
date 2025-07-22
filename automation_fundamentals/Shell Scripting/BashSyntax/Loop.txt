@@ -1,0 +1,26 @@
+#! /usr/bin/bash
+
+# for in bash  [ for i in 1 2 3 4 do {code} done]
+
+#for i in {1..10}
+#do
+#echo "${i}"
+#done
+
+
+# learn="Start Learning Bash Scripting Goodtoknow"
+# for i in $learn
+# do
+# echo "${i}"  # there slicing the string into word , y3ni lma y4of space [" "] keda by3tbr en de kelma fa bygz2ha 
+# done
+
+# var=`ls` # 5od balk hena est3mlna [` `] m4 [' '] wde ht5le el var y7tfz bl m7twa eli hygelk mn list
+
+# for i in ${var}
+
+# do
+
+# echo "The File name is : ${i}"
+# cat "./${i}"
+# echo
+# done

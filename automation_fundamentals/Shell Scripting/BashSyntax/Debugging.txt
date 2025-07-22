@@ -1,0 +1,13 @@
+#! /usr/bin/bash
+
+# debugging 
+
+# set -x
+
+#read -p "Name : " firstName
+#echo "Hello Eng.${firstName}"
+
+#read -sp "SecondName : " secondName
+#echo "Welcome Eng.${firstName}IBN${secondName}"
+
+# set +x
