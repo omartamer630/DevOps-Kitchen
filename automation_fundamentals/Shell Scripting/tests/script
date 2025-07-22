@@ -1,0 +1,14 @@
+#!/usr/bin/bash
+
+dirname=$1
+filename=$2
+
+mkdir "$dirname"
+
+touch "$dirname/$filename"
+
+echo $$
+echo $#
+echo $?
+echo $*
+echo $@
